@@ -1,2 +1,2 @@
 # CodeFun
-A place to hold code examples
+A place to hold code examples.
