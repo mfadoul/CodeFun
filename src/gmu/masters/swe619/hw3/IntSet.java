@@ -16,7 +16,7 @@ import java.util.Vector;
 
 public class IntSet {
     // OVERVIEW: IntSets are unbounded, mutable sets of Integers
-    private Vector els; // the rep
+    private Vector<Integer> els; // the rep
 
     // Constructors
 
@@ -25,7 +25,7 @@ public class IntSet {
      */
     public IntSet () {
         // EFFECTS: Initializes this to be empty
-        els = new Vector();
+        els = new Vector<Integer>();
     }
 
     /**

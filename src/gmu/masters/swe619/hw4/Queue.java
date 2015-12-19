@@ -33,10 +33,10 @@ public class Queue<E> {
 
     // Producers
 
-    public Queue enQueue(E e) {
+    public Queue<E> enQueue(E e) {
         // EFFECTS: Returns a new Queue object that contains all elements plus
         // the parameter e.  This method does not modify the queue.
-        Queue result = new Queue ();
+        Queue<E> result = new Queue<E> ();
 
         for (int i = 0; i < elements.size(); ++i) {
             result.elements.add(elements.get(i));
@@ -49,7 +49,7 @@ public class Queue<E> {
         return result;
     }
 
-    public Queue deQueue() {
+    public Queue<E> deQueue() {
         // EFFECTS: If the queue is empty, throws IllegalStateException,
         // returns a new Queue object that contains all elements of
         // this except the first.  This method does not modify the queue.
@@ -58,7 +58,7 @@ public class Queue<E> {
             throw new IllegalStateException("Queue.deQueue");
         }
 
-        Queue result = new Queue ();
+        Queue<E> result = new Queue<E> ();
         for (int i = 1; i < elements.size(); ++i) {
             result.elements.add(elements.get(i));
             result.size++;
